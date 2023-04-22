@@ -1,0 +1,126 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background: rgb(255,255,255);
+}
+
+.guest.active{
+    color:#2cb52a;
+    background-color: rgb(209 250 229)
+}
+.parent-guest.active{
+    color:#49cf47;
+    border-bottom: 2px solid #49cf47;
+}
+
+nav.guest{
+    box-shadow: 1px 8px 7px -4px rgba(16,79,22,0.42);
+    -webkit-box-shadow: 1px 8px 7px -4px rgba(16,79,22,0.42);
+    -moz-box-shadow: 1px 8px 7px -4px rgba(16,79,22,0.42);
+}
+.hero-title{
+    color: #49cf47;
+    text-shadow: -1px 1px 0 #41ba45,
+        1px 1px 0 #27a989,
+        1px -1px 0 #42afac,
+	-1px -1px 0 #c6c23f;
+}
+
+.health-bacgkround{
+    background: url("../src/images/svg.png") no-repeat center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.carousel-root-div{
+    margin: 0 20px;
+}
+.carousel .control-arrow{
+    opacity: 1 !important;
+    background: rgba(0,0,0,0.2) !important;
+}
+.carousel .control-arrow:hover{
+    background: rgba(173, 7, 7, 0.833) !important;
+}
+
+.control-arrow.control-prev,.control-arrow.control-next{
+    width: 50px;
+}
+
+.control-prev:before {
+    border-right: 20px solid #ffffff !important;
+    opacity: 1 !important;
+}
+
+.control-next:before {
+    border-left: 20px solid #ffffff !important;
+    opacity: 1 !important;
+}
+
+
+
+.carousel-nav-list{
+    margin: 0px 5px;
+}
+.carousel-nav-list:hover div div{
+    color: red;
+}
+
+.carousel-nav-list-bg{
+    content: '';
+    width: 100%;
+    position: absolute;
+    background:black;
+    opacity: 0.1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 0.5rem;
+}
+
+.featured-products:hover img.product-image{
+    transition: all 400ms ease-in-out;
+    transform: scale(1.1);
+}
+
+/* Dropdown Button */
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    top:30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    width: 100%;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: flex;
+}
+
+
+
+
